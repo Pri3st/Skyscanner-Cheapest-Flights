@@ -20,8 +20,10 @@
   <label for="inboundpartialdate">Inbound Partial Date:</label><br>
   <input type="text" id="inboundpartialdate" name="inboundpartialdate">
     </form>
-<p>Please make sure all input is valid before submitting</p>
-<p> Result is: {{resultlength}}</p>
+<p>Please make sure all input is valid before submitting!</p>
+
+<input type="submit">
+<p>{{resultlength}}</p>
 <tr *ngFor="let places of flightsResponse">
   <td>{{places.place.country }}</td>
 </tr>
