@@ -8,7 +8,7 @@ import {FlightsResponse} from '../models/FlightsResponse';
   styleUrls: ['./flights.component.css']
 })
 export class FlightsComponent implements OnInit  {
-  url:string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/GR/EUR/en-US/ATH-sky/LHR-sky/anytime';
+  url = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/GR/EUR/en-US/ATH-sky/LHR-sky/anytime';
   flightsResponse: FlightsResponse [];
   resultlength: any;
   config = { headers:  {
@@ -18,19 +18,19 @@ export class FlightsComponent implements OnInit  {
 
   constructor( private httpClient: HttpClient ) {
       }
+// tslint:disable-next-line:typedef
 ngOnInit() {
   this.getFlights();
 }
-
+  // tslint:disable-next-line:typedef
   getFlights() {
     this.httpClient.get(this.url, this.config)
 
       .subscribe(
         (response: FlightsResponse[]) => {
           this.flightsResponse = response;
-          this.resultlength = this.flightsResponse.length;
+          this.resultlength = this.flightsResponse;
         }
       );
   }
-
 }

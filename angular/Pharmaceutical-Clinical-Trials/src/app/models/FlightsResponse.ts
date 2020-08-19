@@ -1,5 +1,8 @@
 import {Place} from './Place';
 
 export class FlightsResponse {
-  place: Place;
+   Quotes: any [];
+   Places: any [];
+   Carriers: any [];
+   Currencies: any [];
 }
