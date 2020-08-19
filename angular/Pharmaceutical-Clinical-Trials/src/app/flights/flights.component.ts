@@ -7,17 +7,20 @@ import {FlightsResponse} from '../models/FlightsResponse';
   templateUrl: './flights.component.html',
   styleUrls: ['./flights.component.css']
 })
-export class FlightsComponent  {
-  url:string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/UK/GBP/en-GB/';
-  public flightsResponse: FlightsResponse [];
+export class FlightsComponent implements OnInit  {
+  url:string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/GR/EUR/en-US/ATH-sky/LHR-sky/anytime';
+  flightsResponse: FlightsResponse [];
+  resultlength: any;
   config = { headers:  {
-      'X-RapidAPI-Key': '78e91eec31msh380b59179f8577bp134099jsnad08d4d35e71'
+      'X-RapidAPI-Key': '9546e1db3fmsh4c5417e763da442p1229b2jsn5d673a5785c8'
     }
   };
 
   constructor( private httpClient: HttpClient ) {
-    this.getFlights();
-  }
+      }
+ngOnInit() {
+  this.getFlights();
+}
 
   getFlights() {
     this.httpClient.get(this.url, this.config)
@@ -25,6 +28,7 @@ export class FlightsComponent  {
       .subscribe(
         (response: FlightsResponse[]) => {
           this.flightsResponse = response;
+          this.resultlength = this.flightsResponse.length;
         }
       );
   }

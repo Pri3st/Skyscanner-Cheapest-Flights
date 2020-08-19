@@ -1,8 +1,9 @@
 export class Place {
-       placeId: string;
-      placeName: string;
-      countryId: string;
-      regionId: string;
-      cityId: string;
-      countryName: string;
+  country: string;
+  currency: string;
+  locale: string;
+  originplace: string;
+  destinationplace: string;
+  outboundpartialdate: string;
+  inboundpartialdate: string;
  }

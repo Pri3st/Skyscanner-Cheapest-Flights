@@ -1,3 +1,21 @@
+<head>
+  <title>Search Form</title>
+</head>
+<body>
+<h1>Search Form</h1>
+</body>
+<form>
+  <label for="depair">Departure Airport:</label><br>
+  <input type="text" id="depair" name="depair"><br>
+  <label for="ccode">Official Country Code:</label><br>
+  <input type="text" id="ccode" name="ccode"><br>
+  <label for="cur">Currency:</label><br>
+  <input type="text" id="cur" name="cur"><br>
+  <label for="loc">Locale:</label><br>
+  <input type="text" id="loc" name="loc">
+  </form>
+<p>Please make sure all input is valid before submitting</p>
+<p> Result is: {{resultlength}}</p>
 <tr *ngFor="let places of flightsResponse">
-  <td>{{places.place.cityId }}</td>
+  <td>{{places.place.regionId }}</td>
 </tr>
