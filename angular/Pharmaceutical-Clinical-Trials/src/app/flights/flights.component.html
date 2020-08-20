@@ -1,22 +1,7 @@
-<head>
-  <title>Results</title>
-</head>
-<body>
-<h1>Results</h1>
-<p>The information you asked for is presented here as following.</p>
-<p>{{resultlength}}</p>
-<tr *ngFor="let Quotes of flightsResponse">
-  <td>{{Quotes}}</td>
+<p> Result is: {{resultlength}}</p>
+<tr *ngFor="let Place of flightsResponse">
+  <td>{{Place.places}}</td>
+  <td>{{Place.quotes}}</td>
+  <td>{{Place.cityId}}</td>
+  <td>{{Place.regionId}}</td>
 </tr>
-<tr *ngFor="let Places of flightsResponse">
-  <td>{{Places}}</td>
-</tr>
-<tr *ngFor="let Carriers of flightsResponse">
-  <td>{{Carriers}}</td>
-</tr>
-<tr *ngFor="let Currencies of flightsResponse">
-  <td>{{Currencies}}</td>
-</tr>
-<p>All information presented above is property of Skyscanner.</p>
-<p>We are not responsible for any changes in Flights, Prices or any other information. Please contact your airline for confirmation of the above information.</p>
-</body>

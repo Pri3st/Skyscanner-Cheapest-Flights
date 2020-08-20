@@ -1,28 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FlightsResponse} from '../models/FlightsResponse';
-
 @Component({
   selector: 'app-flights',
   templateUrl: './flights.component.html',
   styleUrls: ['./flights.component.css']
 })
 export class FlightsComponent implements OnInit  {
-  url: string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/GR/EUR/en-US/ATH-sky/LHR-sky/anytime';
+  url: any = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/GR/EUR/en-US/ATH-sky/JFK-sky/anytime';
   flightsResponse: FlightsResponse [];
   resultlength: any;
   config = { headers:  {
-      'X-RapidAPI-Key': '9546e1db3fmsh4c5417e763da442p1229b2jsn5d673a5785c8'
+      'X-RapidAPI-Key': '78e91eec31msh380b59179f8577bp134099jsnad08d4d35e71'
     }
   };
-
   constructor( private httpClient: HttpClient ) {
       }
 ngOnInit() {
   this.getFlights();
 }
   getFlights() {
-    this.httpClient.get(this.url, this.config)
+    return this.httpClient.get(this.url, this.config)
 
       .subscribe(
         (response: FlightsResponse[]) => {
@@ -31,5 +29,4 @@ ngOnInit() {
         }
       );
   }
-
 }
