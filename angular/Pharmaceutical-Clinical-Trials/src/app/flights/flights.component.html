@@ -1,7 +1,291 @@
-<p> Result is: {{resultlength}}</p>
-<tr *ngFor="let Place of flightsResponse">
-  <td>{{Place.places}}</td>
-  <td>{{Place.quotes}}</td>
-  <td>{{Place.cityId}}</td>
-  <td>{{Place.regionId}}</td>
-</tr>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Cheat</title>
+</head>
+<body>
+
+<h1>"Quotes": <br></h1>
+
+<ol>
+  <li>"QuoteId": 1,<br>
+    "MinPrice": 265.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1090<br>
+
+    "OriginId": 40920<br>
+    "DestinationId": 60987<br>
+    "DepartureDate": "2020-08-28T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T21:40:00"<br></li>
+
+
+  <li>"QuoteId": 2,<br>
+    "MinPrice": 230.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds":<br>
+    1090<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2020-09-29T00:00:00"<br>
+    "QuoteDateTime": "2020-08-20T06:00:00"<br><li>
+
+
+  <li>"QuoteId": 3,<br>
+    "MinPrice": 216.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1816<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2020-10-29T00:00:00"<br>
+    "QuoteDateTime": "2020-08-16T16:28:00"<br>
+  </li>
+
+  <li>"QuoteId": 4,<br>
+    "MinPrice": 212.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1865<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2020-11-13T00:00:00"<br>
+    "QuoteDateTime": "2020-08-16T23:17:00"<br>
+  </li>
+
+  <li>"QuoteId": 5,<br>
+    "MinPrice": 208.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": [<br>
+    1816<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2020-12-20T00:00:00"<br>
+    "QuoteDateTime": "2020-08-18T11:45:00"<br>
+  </li>
+
+  <li>"QuoteId": 6,<br>
+    "MinPrice": 202.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1865<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-01-29T00:00:00"<br>
+    "QuoteDateTime": "2020-08-16T12:42:00"<br>
+  </li>
+
+  <li>"QuoteId": 7,<br>
+    "MinPrice": 190.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": [<br>
+    1865
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-02-10T00:00:00"<br>
+    "QuoteDateTime": "2020-08-18T12:17:00"<br>
+  </li>
+
+  <li>"QuoteId": 8,<br>
+    "MinPrice": 244.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1816<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-03-04T00:00:00"<br>
+    "QuoteDateTime": "2020-08-16T10:37:00"<br>
+  </li>
+
+  <li>"QuoteId": 9,<br>
+    "MinPrice": 242.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1816<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-04-01T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T14:18:00"<br>
+  </li>
+
+  <li>"QuoteId": 10,<br>
+    "MinPrice": 364.0,<br>
+    "Direct": true,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1859<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-04-14T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T18:08:00"<br>
+  </li>
+
+  <li>"QuoteId": 11,<br>
+    "MinPrice": 387.0,<br>
+    "Direct": true,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1859<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-05-08T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T14:43:00"<br>
+  </li>
+
+  <li>"QuoteId": 12,<br>
+    "MinPrice": 220.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1816<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-05-09T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T14:46:00"<br>
+  </li>
+
+  <li>"QuoteId": 13,<br>
+    "MinPrice": 205.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1816<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-06-03T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T14:54:00"<br>
+  </li>
+
+  <li>"QuoteId": 14,<br>
+    "MinPrice": 410.0,<br>
+    "Direct": true,<br>
+    "OutboundLeg":<br>
+    "CarrierIds":<br>
+    1859<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-06-17T00:00:00"<br>
+    "QuoteDateTime": "2020-08-17T09:48:00"<br>
+  </li>
+
+  <li>"QuoteId": 15,<br>
+    "MinPrice": 418.0,<br>
+    "Direct": true,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    1859<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-07-01T00:00:00"<br>
+    "QuoteDateTime": "2020-08-19T20:40:00"<br>
+  </li>
+
+  <li>"QuoteId": 16,<br>
+    "MinPrice": 238.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    819<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-07-14T00:00:00"<br>
+    "QuoteDateTime": "2020-08-18T21:34:00"<br>
+  </li>
+
+  <li>"QuoteId": 17,<br>
+    "MinPrice": 268.0,<br>
+    "Direct": false,<br>
+    "OutboundLeg":<br>
+    "CarrierIds": <br>
+    819<br>
+
+    "OriginId": 40920,<br>
+    "DestinationId": 60987,<br>
+    "DepartureDate": "2021-08-01T00:00:00"<br>
+    "QuoteDateTime": "2020-08-18T00:20:00"<br>
+  </li>
+</ol>
+
+<h2>"Places": <br></h2>
+
+<p>"PlaceId": 40920,<br>
+  "IataCode": "ATH",<br>
+  "Name": "Athens International",<br>
+  "Type": "Station",<br>
+  "SkyscannerCode": "ATH",<br>
+  "CityName": "Athens",<br>
+  "CityId": "ATHE",<br>
+  "CountryName": "Greece"<br>
+</p>
+
+<p>"PlaceId": 60987,<br>
+  "IataCode": "JFK",<br>
+  "Name": "New York John F. Kennedy",<br>
+  "Type": "Station",<br>
+  "SkyscannerCode": "JFK",<br>
+  "CityName": "New York",<br>
+  "CityId": "NYCA",<br>
+  "CountryName": "United States"<br>
+</p>
+
+<h3>"Carriers": <br></h3>
+
+<ul>
+  <li>"CarrierId": 819,<br>
+    "Name": "Aegean Airlines"<br></li>
+
+
+  <li>"CarrierId": 1090,<br>
+    "Name": "Ryanair"<br></li>
+
+
+  <li>"CarrierId": 1816,<br>
+    "Name": "Air Europa"<br></li>
+
+
+  <li>"CarrierId": 1859,<br>
+    "Name": "Virgin Atlantic"<br></li>
+
+
+  <li>"CarrierId": 1865<br>
+    "Name": "Vueling Airlines"<br></li>
+</ul>
+
+<h4>"Currencies": <br></h4>
+
+"Code": "EUR",<br>
+"Symbol": "€",<br>
+"ThousandsSeparator": ".",<br>
+"DecimalSeparator": ",",<br>
+"SymbolOnLeft": false,<br>
+"SpaceBetweenAmountAndSymbol": true,<br>
+"RoundingCoefficient": 0,<br>
+"DecimalDigits": 2<br>
+
+</body>
+</html>
