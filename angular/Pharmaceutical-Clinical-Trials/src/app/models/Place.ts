@@ -1,8 +1,7 @@
 export class Place {
-       placeId: string;
-      placeName: string;
-      countryId: string;
+      places: string;
+      quotes: string;
       regionId: string;
       cityId: string;
-      countryName: string;
- }
+      currenc: string;
+}
