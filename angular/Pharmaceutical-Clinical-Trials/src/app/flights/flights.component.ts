@@ -7,17 +7,20 @@ import {FlightsResponse} from '../models/FlightsResponse';
   templateUrl: './flights.component.html',
   styleUrls: ['./flights.component.css']
 })
-export class FlightsComponent  {
-  url:string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/UK/GBP/en-GB/';
-  public flightsResponse: FlightsResponse [];
+export class FlightsComponent implements OnInit  {
+  url:string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/GR/EUR/en-US/?query=Athens&country=GR&currency=EUR&locale=US';
+  flightsResponse: FlightsResponse [];
+  resultlength: any;
   config = { headers:  {
       'X-RapidAPI-Key': '78e91eec31msh380b59179f8577bp134099jsnad08d4d35e71'
     }
   };
 
   constructor( private httpClient: HttpClient ) {
-    this.getFlights();
-  }
+      }
+ngOnInit() {
+  this.getFlights();
+}
 
   getFlights() {
     this.httpClient.get(this.url, this.config)
@@ -25,6 +28,7 @@ export class FlightsComponent  {
       .subscribe(
         (response: FlightsResponse[]) => {
           this.flightsResponse = response;
+          this.resultlength = this.flightsResponse.length;
         }
       );
   }

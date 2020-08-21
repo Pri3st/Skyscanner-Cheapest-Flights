@@ -4,16 +4,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlightsComponent } from './flights/flights.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavigationBarComponent } from './navbar/navbar.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlightsComponent
+    FlightsComponent,
+    NavigationBarComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
     bootstrap: [AppComponent]
 })
