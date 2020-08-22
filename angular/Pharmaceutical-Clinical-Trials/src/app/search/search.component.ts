@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import {Validators} from '@angular/forms';
 
 
 @Component({
@@ -10,4 +11,5 @@ import { FormControl } from '@angular/forms';
 export class SearchComponent {
   name = new FormControl('');
 }
+
 

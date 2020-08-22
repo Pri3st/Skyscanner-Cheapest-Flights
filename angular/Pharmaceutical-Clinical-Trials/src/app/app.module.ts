@@ -9,10 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import {Routes} from '@angular/router';
 import { SearchComponent } from './search/search.component';
-import {ReactiveFormsModule, Validators} from '@angular/forms';
-
-
-
+import {ReactiveFormsModule} from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -23,8 +20,6 @@ const routes: Routes = [
 ];
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +28,12 @@ const routes: Routes = [
     ContactComponent,
     AboutComponent,
     SearchComponent
-  ],
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
       ],
     bootstrap: [AppComponent]
 })

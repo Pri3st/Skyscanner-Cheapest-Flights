@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {FlightsResponse} from '../models/FlightsResponse';
-import {stripUnnecessaryQuotes} from '@angular/compiler/src/render3/view/style_parser';
-import {isQuote} from '@angular/compiler';
+import {FlightsResponse} from './models/FlightsResponse';
 
 @Component({
   selector: 'app-flights',
@@ -12,17 +10,17 @@ import {isQuote} from '@angular/compiler';
 export class FlightsComponent implements OnInit  {
   url:string = 'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/GR/EUR/en-US/?query=Athens&country=GR&currency=EUR&locale=US';
   flightsResponse: FlightsResponse [];
-  resultlength: number;
+  resultlength: any;
   config = { headers:  {
       'X-RapidAPI-Key': '78e91eec31msh380b59179f8577bp134099jsnad08d4d35e71'
     }
   };
 
   constructor( private httpClient: HttpClient ) {
-      }
-ngOnInit() {
-  this.getFlights();
-}
+  }
+  ngOnInit() {
+    this.getFlights();
+  }
 
   getFlights() {
     this.httpClient.get(this.url, this.config)
@@ -36,19 +34,5 @@ ngOnInit() {
   }
 
 }
-const sort_by = (field, reverse, primer) => {
 
-  const key = primer ?
-    function(x) {
-      return primer(x[field])
-    } :
-    function(x) {
-      return x[field]
-    };
 
-  reverse = !reverse ? 1 : -1;
-
-  return function(a, b) {
-    return a = key(a), b = key(b);
-  }
-}
