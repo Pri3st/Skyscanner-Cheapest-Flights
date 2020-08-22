@@ -78,17 +78,7 @@ input[type=submit]:hover {
   background-color: #000;
 }
 
-.facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.google {
+.github {
   background: #dd4b39;
   color: white;
 }
@@ -101,4 +91,11 @@ input[type=submit]:hover {
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }

@@ -1,0 +1,26 @@
+<div formGroupName="search">
+  <h3>Flight Search</h3>
+
+  <ul>
+  <li><label>
+    Origin Airport:
+    <input type="text" formControlName="origair">
+  </label>
+  </li>
+  <li><label>
+    Destination Airport:
+    <input type="text" formControlName="destair">
+  </label>
+    <p>Warning: Only official airport codes followed by -sky (eg: ATH-sky) (if you do not know it, you can search it <a href="https://www.world-airport-codes.com/">HERE</a>)</p>
+  </li>
+    <li> <label>
+          Date:
+    <input type="text" formControlName="date">
+  </label>
+      <p>Warning: Add specific date in the form of YY-MM-DD or YY-MM.<br>
+        If you want to search for the lowest fare regardless the date, insert "anytime"</p>
+    </li>
+    </ul>
+
+  <button class="button" type="Search">Find the cheapest flight for me!</button>
+</div>
