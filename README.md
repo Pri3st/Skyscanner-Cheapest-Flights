@@ -13,3 +13,6 @@ For the purposes of the above web service, I will use Angular JS, Webstorm, Node
    πχ C:\Users\mario\Desktop\Internet-Applications-Project\Pharmaceutical-Clinical-Trials\angular\Pharmaceutical-Clinical-Trials
 5) Τρέχουμε την εφαρμογή μέσω της εντολής ng serve, μέσω της οποία ανοίγει αυτόματα στη θύρα 4200 η αρχική σελίδα της εφαρμογής μας.
 
+# Προσοχή
+Το όνομα του project και η αρχική δήλωση δεν ανταποκρίνονται στην πραγματική υλοποίηση, καθώς μου ζητήθηκε να αλλάξω θέμα, χωρίς ωστόσο να αλλάξω το Repisotory μου.
+
