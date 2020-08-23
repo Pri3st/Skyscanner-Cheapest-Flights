@@ -35,4 +35,6 @@ export class FlightsComponent implements OnInit  {
 
 }
 
+export class FlightsresultsService{
 
+}

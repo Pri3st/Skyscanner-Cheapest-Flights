@@ -1,27 +1,27 @@
-<div formGroupName="search">
-  <h3>Flight Search</h3>
+<form [formGroup]="">
 
-    <ul>
+  <ul>
   <li><label>
-    Origin Airport:
+    <h1>Origin Airport:</h1>
     <input type="text" formControlName="origair">
   </label>
   </li>
+
   <li><label>
-    Destination Airport:
+    <h1>Destination Airport:</h1>
     <input type="text" formControlName="destair">
   </label>
-    <p>Warning: Only official airport codes (eg: ATH) (if you do not know it, you can search it <a href="https://www.world-airport-codes.com/">HERE</a>)</p>
   </li>
-    <li> <label>
-          Date:
-    <input type="text" formControlName="date">
-  </label>
-      <p>Warning: Add specific date in the form of YY-MM-DD or YY-MM.<br>
-        If you want to search for the lowest fare regardless the date, insert "anytime"</p>
+    <p>Warning: Only official airport codes (eg: ATH) (if you do not know it, you can search it <a href="https://www.world-airport-codes.com/">HERE</a>)</p>
+    <li><label>
+      <h1>Date:</h1>
+      <input type="text" formControlName="date">
+    </label>
     </li>
-    </ul>
+    <p>Warning: Add specific date in the form of YY-MM-DD or YY-MM.<br>
+      If you want to search for the lowest fare regardless the date, insert "anytime"</p>
+  </ul>
+</form>
 
-  <button class="button"  type="Submit">Find the cheapest flight for me! </button>
-  </div>
+<p><button type="submit" >Get me the cheapest flights!</button></p>
 
