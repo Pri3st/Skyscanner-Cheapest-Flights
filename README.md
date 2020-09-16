@@ -13,4 +13,5 @@ For the purposes of the above web service, I will use Angular JS, Webstorm, Node
    e.g C:\Users\John\Desktop\Internet-Applications-Project\Pharmaceutical-Clinical-Trials\angular\Pharmaceutical-Clinical-Trials
 5) Run the application by executing the ng serve command in CLI. A browser window will automatically open in port 4200 of localhost, where you will find the Starting page of the application.
 
-
+#Project Name
+The angular project name does not correspond to the actual web application, since the initial project was related to Pharmaceutical Trials and could not be changed.
