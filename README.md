@@ -6,13 +6,11 @@ In this project, the web service mines data from the Skyscanner Flight Search AP
 For the purposes of the above web service, I will use Angular JS, Webstorm, Node.js and Postman.
 
 # Installation
-1) Λήψη και Εγκατάσταση του Node.js μέσω του συνδέσμου: https://nodejs.org/en/
-2) Κατέβασμα του κώδικα της εφαρμογής στον υπολογιστή μας, από το GitHub
-3) Εγκατάσταση της Angular, μέσω εκτέλεσης στο CLI της εντολής: npm install -g @angular/cli
-4) Στον φάκελο της εφαρμογής, βρίσκουμε το directory path της εντός του φακέλου angular
-   πχ C:\Users\mario\Desktop\Internet-Applications-Project\Pharmaceutical-Clinical-Trials\angular\Pharmaceutical-Clinical-Trials
-5) Τρέχουμε την εφαρμογή μέσω της εντολής ng serve, μέσω της οποία ανοίγει αυτόματα στη θύρα 4200 η αρχική σελίδα της εφαρμογής μας.
+1) Install Node.js (https://nodejs.org/en/)
+2) Download the application code from the GitHub Repository and save it to the desired folder in your PC.
+3) Install Angular by running the following command in CLI: npm install -g @angular/cli
+4) Find the directory path of the folder in which you have saved the application code and change your working directory there by the cd command in CLI.
+   e.g C:\Users\John\Desktop\Internet-Applications-Project\Pharmaceutical-Clinical-Trials\angular\Pharmaceutical-Clinical-Trials
+5) Run the application by executing the ng serve command in CLI. A browser window will automatically open in port 4200 of localhost, where you will find the Starting page of the application.
 
-# Προσοχή
-Το όνομα του project και η αρχική δήλωση δεν ανταποκρίνονται στην πραγματική υλοποίηση, καθώς μου ζητήθηκε να αλλάξω θέμα, χωρίς ωστόσο να αλλάξω το Repisotory μου.
 
